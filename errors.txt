@@ -1,0 +1,18 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/music.rpy", line 68: expected statement.
+    delayblinds = ImageDissolve("vfx/tr-delayblinds.png", 1.0)
+                ^
+
+File "game/music.rpy", line 69: expected statement.
+    delayblindsfade = MultipleTransition([False,SoundTransition("sfx/time.ogg"),False,delayblinds,Solid("#000"),delayblinds,True])
+                    ^
+
+File "game/music.rpy", line 71: expected statement.
+    shorttimeskip = delayblindsfade
+                  ^
+
+Ren'Py Version: Ren'Py 8.3.4.24120703
+Sun Nov 23 22:34:44 2025

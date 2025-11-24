@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/ui_sprites.rpy", line 13, in script
+    init 1 python:
+  File "game/ui_sprites.rpy", line 14, in <module>
+    sp_filters = ((sp_sunset,'ss'),
+NameError: name 'sp_sunset' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/ui_sprites.rpy", line 13, in script
+    init 1 python:
+  File "E:\renpy-8.0.3-sdk\renpy\ast.py", line 827, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "E:\renpy-8.0.3-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/ui_sprites.rpy", line 14, in <module>
+    sp_filters = ((sp_sunset,'ss'),
+NameError: name 'sp_sunset' is not defined
+
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.3.4.24120703
+Katawa Shoujo Stories Beyond 1.0
+Sun Nov 23 22:48:53 2025
