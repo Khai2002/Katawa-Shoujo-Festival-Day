@@ -1,26 +1,58 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/ui_sprites.rpy", line 13, in script
-    init 1 python:
-  File "game/ui_sprites.rpy", line 14, in <module>
-    sp_filters = ((sp_sunset,'ss'),
-NameError: name 'sp_sunset' is not defined
+  File "game/script.rpy", line 19, in script call
+    call school_dormhisao
+  File "game/scripts/school/school_dormhisao.rpy", line 36, in script call
+    call .school_dormhisao_7h_0
+  File "game/scripts/school/school_dormhisao.rpy", line 69, in script call
+    call school_dormhisao_7h_0a
+  File "game/scripts/school/school_dormhallway.rpy", line 26, in script call
+    call school_dormhallway_7h_0
+  File "game/scripts/school/school_dormext_full.rpy", line 26, in script call
+    call school_dormhisao_7h_0
+  File "game/script.rpy", line 19, in script call
+    call school_dormhisao
+  File "game/scripts/school/school_dormhisao.rpy", line 36, in script call
+    call .school_dormhisao_7h_0
+  File "game/scripts/school/school_dormhisao.rpy", line 69, in script call
+    call school_dormhisao_7h_0a
+  File "game/scripts/school/school_dormhallway.rpy", line 26, in script call
+    call school_dormhallway_7h_0
+  File "game/scripts/school/school_dormext_full.rpy", line 26, in script call
+    call school_dormhisao_7h_0
+ScriptError: could not find label 'school_dormhisao_7h_0'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/ui_sprites.rpy", line 13, in script
-    init 1 python:
-  File "E:\renpy-8.0.3-sdk\renpy\ast.py", line 827, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "E:\renpy-8.0.3-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/ui_sprites.rpy", line 14, in <module>
-    sp_filters = ((sp_sunset,'ss'),
-NameError: name 'sp_sunset' is not defined
+  File "game/script.rpy", line 19, in script call
+    call school_dormhisao
+  File "game/scripts/school/school_dormhisao.rpy", line 36, in script call
+    call .school_dormhisao_7h_0
+  File "game/scripts/school/school_dormhisao.rpy", line 69, in script call
+    call school_dormhisao_7h_0a
+  File "game/scripts/school/school_dormhallway.rpy", line 26, in script call
+    call school_dormhallway_7h_0
+  File "game/scripts/school/school_dormext_full.rpy", line 26, in script call
+    call school_dormhisao_7h_0
+  File "E:\renpy-8.0.3-sdk\renpy\ast.py", line 1420, in execute
+    rv = renpy.game.context().call(label, return_site=self.next.name)
+  File "game/script.rpy", line 19, in script call
+    call school_dormhisao
+  File "game/scripts/school/school_dormhisao.rpy", line 36, in script call
+    call .school_dormhisao_7h_0
+  File "game/scripts/school/school_dormhisao.rpy", line 69, in script call
+    call school_dormhisao_7h_0a
+  File "game/scripts/school/school_dormhallway.rpy", line 26, in script call
+    call school_dormhallway_7h_0
+  File "game/scripts/school/school_dormext_full.rpy", line 26, in script call
+    call school_dormhisao_7h_0
+  File "E:\renpy-8.0.3-sdk\renpy\script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'school_dormhisao_7h_0'.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.4.24120703
 Katawa Shoujo Stories Beyond 1.0
-Sun Nov 23 22:48:53 2025
+Mon Nov 24 22:49:10 2025

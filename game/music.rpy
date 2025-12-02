@@ -56,14 +56,6 @@ define door_open = "sfx/dooropen.ogg"
 define watersplash = "sfx/watersplash.ogg"
 define switch = "sfx/switch.ogg"
 
-image bg mural_start = "vfx/mural_start.jpg"
-image bg mural_unfinished = "vfx/mural_unfinished.jpg"
-image bg mural_part = At("vfx/mural.jpg", Transform(xalign=0.0))
-image mural all = "vfx/mural_wide.jpg"
-image bg mural = "vfx/mural.jpg"
-# image bg mural_ss = sunset("vfx/mural.jpg")
-# image mural pan = At("vfx/mural.jpg",Fullpan(60.0, dir="left"))
-
 init python:
     delayblinds = ImageDissolve("vfx/tr-delayblinds.png", 1.0)
     delayblindsfade = MultipleTransition([False,delayblinds,Solid("#000"),delayblinds,True])

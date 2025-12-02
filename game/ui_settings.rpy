@@ -63,6 +63,9 @@ transform crowdgen(img1, img2, img3):
                 img1  with crowdtrans 
                 repeat
 
+image mural all = "vfx/mural_wide.jpg"
+image mural normal = "vfx/mural.jpg"
+
 image crowd = crowdgen("vfx/crowd1.png","vfx/crowd2.png","vfx/crowd3.png")
 image crowd_ss = crowdgen(sunset("vfx/crowd1.png"),sunset("vfx/crowd2.png"),sunset("vfx/crowd3.png"))
 image crowd_ni = crowdgen(night("vfx/crowd1.png"),night("vfx/crowd2.png"),night("vfx/crowd3.png"))

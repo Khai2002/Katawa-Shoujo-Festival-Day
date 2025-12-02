@@ -158,7 +158,7 @@ label school_dormhisao_7h_takeMyPills:
 
 label school_dormhisao_11h_0:
 
-    scene school_dormhisao with dissolve
+    scene school_dormhisao with shorttimeskip
 
     "I wake up feeling a little lightheaded."
      
