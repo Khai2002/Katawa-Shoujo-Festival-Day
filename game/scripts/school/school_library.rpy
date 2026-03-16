@@ -110,7 +110,7 @@ label school_library_8h_1:
 
     "I could ask her to stay and read together, like last time… but that hadn't gone smoothly. Not at all."
 
-        menu:
+    menu:
 
         "Ask if she wants to join":
             call school_library_8h_1a
@@ -163,9 +163,7 @@ label school_library_8h_1b:
     Hisao "If you'd rather have the space to yourself, I can move somewhere else."
     
     "I figure she probably didn't come here to chat with someone she barely knows. Knowing her, she wouldn't want to inconvenience me, so maybe it's better if I offer to leave."
-    
-    "Her eyes widen slightly, surprised at my proposition."
-    
+
     "Her eyes flick up, a trace of surprise in them."
     
     Hanako "N…no… you don't… have to…"

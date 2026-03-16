@@ -52,6 +52,7 @@ screen action_menu(actions, prefix):
                         if a.is_available():
                             textbutton a.name:
                                 action [
+                                    Function(lock_free_roam),
                                     Hide("action_menu"),
                                     SetVariable("current_action", a),
                                     Call(f"{prefix}_{clock_hour}h_{to_camel_case(a.name)}")
@@ -63,6 +64,7 @@ screen action_menu(actions, prefix):
                     if a.is_available():
                         textbutton a.name:
                             action [
+                                    Function(lock_free_roam),
                                     Hide("action_menu"),
                                     SetVariable("current_action", a),
                                     Call(f"{prefix}_{clock_hour}h_{to_camel_case(a.name)}")
@@ -70,7 +72,7 @@ screen action_menu(actions, prefix):
                             at fade_in
 
 screen action():
-    textbutton "ACTION":
+    textbutton "ACTIONS: [sum(1 for x in actions if x.is_available())]":
         style "action_button"
         text_style "custom_button_text"
         sensitive not action_lock
