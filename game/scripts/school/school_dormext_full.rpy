@@ -61,17 +61,17 @@ label school_dormext_full_7h_0:
 
     "It is frustrating."
 
-    "This whole week I have been stuck in my own self-pity, too wrapped up in my problems to look forward to today. It feels undeserved, this bright, busy festival."
+    "This whole week I have been too stuck in my head to look forward to today. It feels undeserved, this bright, busy festival."
 
-    "Without context, it might look like good timing, as if the school arranged all this to welcome me into my new life."
+    "It might look like good timing, as if the school arranged all this to welcome me into my new life."
     
-    "But it does not feel like a welcome. It feels like a twisting knife."
+    "But it does not feel like a welcome. More like a twisting knife."
 
     "The school is inviting, the people friendly, but I still have not accepted any of it. A part of me is still grieving the life that vanished in a faulty heartbeat."
 
     "Everything is moving around me."
 
-    "Yet, I am still, and alone."
+    "Yet, I am standing still, and alone."
 
     "..."
 

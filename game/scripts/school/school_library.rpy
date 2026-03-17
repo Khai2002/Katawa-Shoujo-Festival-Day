@@ -11,7 +11,7 @@ label school_library:
         location_labels = ['school_hallway2']
 
         actions = [
-            Action(name="Browse some books", time_cost=1)
+            Action(name="Browse some books", time_cost=1, available_fn=lambda: clock_hour == 7)
         ]
         prefix = "school_library"
 

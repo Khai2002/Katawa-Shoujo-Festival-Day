@@ -3,78 +3,118 @@
 While running game code:
   File "game/script.rpy", line 19, in script call
     call school_dormhisao
-  File "game/scripts/school/school_dormhisao.rpy", line 36, in script call
+  File "game/scripts/school/school_dormhisao.rpy", line 37, in script call
     call school_dormhisao_7h_0
-  File "game/scripts/school/school_dormhisao.rpy", line 53, in script
-    scene school_dormhisao_blurred with dissolve
-  File "game/action_core.rpy", line 72, in execute
-    screen action():
-  File "game/action_core.rpy", line 72, in execute
-    screen action():
-  File "game/action_core.rpy", line 73, in execute
-    textbutton "ACTIONS: [len(list_action)]":
-NameError: name 'list_action' is not defined
+  File "game/scripts/school/school_dormhisao.rpy", line 70, in script call
+    call school_dormhisao_7h_0a
+  File "game/scripts/school/school_dormhallway.rpy", line 26, in script call
+    call school_dormhallway_7h_0
+  File "game/scripts/school/school_dormext_full.rpy", line 30, in script call
+    call school_dormext_full_7h_0
+  File "game/scripts/school/school_dormext_full.rpy", line 36, in script call
+    call screen location_selector(location_images, location_labels, location_available) with dissolve_fast
+  File "game/scripts/school/school_stalls1.rpy", line 28, in script call
+    call school_stalls1_7h_0
+  File "game/scripts/school/school_stalls2.rpy", line 28, in script call
+    call school_stalls2_7h_0
+  File "game/scripts/school/school_track.rpy", line 26, in script call
+    call school_track_7h_0
+  File "game/scripts/school/school_track.rpy", line 66, in script call
+    call school_track_7h_0a
+  File "game/scripts/school/school_track.rpy", line 130, in script call
+    call school_track_7h_1b
+  File "game/scripts/school/school_library.rpy", line 31, in script call
+    call screen location_selector(location_images, location_labels) with dissolve_fast
+  File "game/script.rpy", line 19, in script call
+    call school_dormhisao
+  File "game/scripts/school/school_dormhisao.rpy", line 37, in script call
+    call school_dormhisao_7h_0
+  File "game/scripts/school/school_dormhisao.rpy", line 70, in script call
+    call school_dormhisao_7h_0a
+  File "game/scripts/school/school_dormhallway.rpy", line 26, in script call
+    call school_dormhallway_7h_0
+  File "game/scripts/school/school_dormext_full.rpy", line 30, in script call
+    call school_dormext_full_7h_0
+  File "game/scripts/school/school_dormext_full.rpy", line 36, in script call
+    call screen location_selector(location_images, location_labels, location_available) with dissolve_fast
+  File "game/scripts/school/school_stalls1.rpy", line 28, in script call
+    call school_stalls1_7h_0
+  File "game/scripts/school/school_stalls2.rpy", line 28, in script call
+    call school_stalls2_7h_0
+  File "game/scripts/school/school_track.rpy", line 26, in script call
+    call school_track_7h_0
+  File "game/scripts/school/school_track.rpy", line 66, in script call
+    call school_track_7h_0a
+  File "game/scripts/school/school_track.rpy", line 130, in script call
+    call school_track_7h_1b
+  File "game/scripts/school/school_library.rpy", line 31, in script call
+    call screen location_selector(location_images, location_labels) with dissolve_fast
+ScriptError: could not find label 'school_library_8h_browseSomeBooks'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
+  File "E:\renpy-8.0.3-sdk\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "E:\renpy-8.0.3-sdk\renpy\main.py", line 652, in main
+    run(restart)
+  File "E:\renpy-8.0.3-sdk\renpy\main.py", line 148, in run
+    renpy.execution.run_context(True)
+  File "E:\renpy-8.0.3-sdk\renpy\execution.py", line 958, in run_context
+    context.run()
   File "game/script.rpy", line 19, in script call
     call school_dormhisao
-  File "game/scripts/school/school_dormhisao.rpy", line 36, in script call
+  File "game/scripts/school/school_dormhisao.rpy", line 37, in script call
     call school_dormhisao_7h_0
-  File "game/scripts/school/school_dormhisao.rpy", line 53, in script
-    scene school_dormhisao_blurred with dissolve
-  File "E:\renpy-8.0.3-sdk\renpy\ast.py", line 1367, in execute
-    renpy.exports.with_statement(trans, paired=paired)
-  File "E:\renpy-8.0.3-sdk\renpy\exports\statementexports.py", line 257, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "E:\renpy-8.0.3-sdk\renpy\display\core.py", line 1578, in do_with
-    return self.interact(trans_pause=True,
-  File "E:\renpy-8.0.3-sdk\renpy\display\core.py", line 2215, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "E:\renpy-8.0.3-sdk\renpy\display\core.py", line 2745, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "E:\renpy-8.0.3-sdk\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "E:\renpy-8.0.3-sdk\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "E:\renpy-8.0.3-sdk\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  [Previous line repeated 1 more time]
-  File "E:\renpy-8.0.3-sdk\renpy\display\screen.py", line 480, in visit_all
-    callback(self)
-  File "E:\renpy-8.0.3-sdk\renpy\display\core.py", line 2745, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "E:\renpy-8.0.3-sdk\renpy\display\screen.py", line 491, in per_interact
-    self.update()
-  File "E:\renpy-8.0.3-sdk\renpy\display\screen.py", line 697, in update
-    self.screen.function(**self.scope)
-  File "game/action_core.rpy", line 72, in execute
-    screen action():
-  File "game/action_core.rpy", line 72, in execute
-    screen action():
-  File "game/action_core.rpy", line 73, in execute
-    textbutton "ACTIONS: [len(list_action)]":
-  File "E:\renpy-8.0.3-sdk\renpy\ui.py", line 1015, in _textbutton
-    text = renpy.text.text.Text(label, style=text_style, substitute=substitute, scope=scope, **text_kwargs)
-  File "E:\renpy-8.0.3-sdk\renpy\text\text.py", line 2059, in __init__
-    self.set_text(text, scope, substitute) # type: ignore
-  File "E:\renpy-8.0.3-sdk\renpy\text\text.py", line 2192, in set_text
-    i, did_sub = renpy.substitutions.substitute(i, scope, substitute) # type: ignore
-  File "E:\renpy-8.0.3-sdk\renpy\substitutions.py", line 373, in substitute
-    s = interpolate(s, variables) # type: ignore
-  File "E:\renpy-8.0.3-sdk\renpy\substitutions.py", line 86, in interpolate
-    raise e
-  File "E:\renpy-8.0.3-sdk\renpy\substitutions.py", line 78, in interpolate
-    value = renpy.python.py_eval(code, {}, scope)
-  File "E:\renpy-8.0.3-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "E:\renpy-8.0.3-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "<none>", line 1, in <module>
-NameError: name 'list_action' is not defined
+  File "game/scripts/school/school_dormhisao.rpy", line 70, in script call
+    call school_dormhisao_7h_0a
+  File "game/scripts/school/school_dormhallway.rpy", line 26, in script call
+    call school_dormhallway_7h_0
+  File "game/scripts/school/school_dormext_full.rpy", line 30, in script call
+    call school_dormext_full_7h_0
+  File "game/scripts/school/school_dormext_full.rpy", line 36, in script call
+    call screen location_selector(location_images, location_labels, location_available) with dissolve_fast
+  File "game/scripts/school/school_stalls1.rpy", line 28, in script call
+    call school_stalls1_7h_0
+  File "game/scripts/school/school_stalls2.rpy", line 28, in script call
+    call school_stalls2_7h_0
+  File "game/scripts/school/school_track.rpy", line 26, in script call
+    call school_track_7h_0
+  File "game/scripts/school/school_track.rpy", line 66, in script call
+    call school_track_7h_0a
+  File "game/scripts/school/school_track.rpy", line 130, in script call
+    call school_track_7h_1b
+  File "game/scripts/school/school_library.rpy", line 31, in script call
+    call screen location_selector(location_images, location_labels) with dissolve_fast
+  File "game/script.rpy", line 19, in script call
+    call school_dormhisao
+  File "game/scripts/school/school_dormhisao.rpy", line 37, in script call
+    call school_dormhisao_7h_0
+  File "game/scripts/school/school_dormhisao.rpy", line 70, in script call
+    call school_dormhisao_7h_0a
+  File "game/scripts/school/school_dormhallway.rpy", line 26, in script call
+    call school_dormhallway_7h_0
+  File "game/scripts/school/school_dormext_full.rpy", line 30, in script call
+    call school_dormext_full_7h_0
+  File "game/scripts/school/school_dormext_full.rpy", line 36, in script call
+    call screen location_selector(location_images, location_labels, location_available) with dissolve_fast
+  File "game/scripts/school/school_stalls1.rpy", line 28, in script call
+    call school_stalls1_7h_0
+  File "game/scripts/school/school_stalls2.rpy", line 28, in script call
+    call school_stalls2_7h_0
+  File "game/scripts/school/school_track.rpy", line 26, in script call
+    call school_track_7h_0
+  File "game/scripts/school/school_track.rpy", line 66, in script call
+    call school_track_7h_0a
+  File "game/scripts/school/school_track.rpy", line 130, in script call
+    call school_track_7h_1b
+  File "game/scripts/school/school_library.rpy", line 31, in script call
+    call screen location_selector(location_images, location_labels) with dissolve_fast
+  File "E:\renpy-8.0.3-sdk\renpy\script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'school_library_8h_browseSomeBooks'.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.4.24120703
 Katawa Shoujo Stories Beyond 1.0
-Sun Dec  7 15:47:30 2025
+Tue Mar 17 00:02:27 2026

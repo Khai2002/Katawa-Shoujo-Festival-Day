@@ -149,7 +149,7 @@ label school_dormhisao_7h_takeMyPills:
 
     "I take a sip of water, tilt my head back, and let them slide down."
 
-    "Another day, another reminder that my heart isn't as simple as I wish it were."
+    "Another day, another reminder that my heart isn't as simple as I wish it was."
 
     "With the medicine taken, I feel a faint sense of relief. It's nothing dramatic, but it's enough to start the day."
 
